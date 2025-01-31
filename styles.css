@@ -36,8 +36,10 @@ body {
   background-image: linear-gradient(#e9f0ff, #5a6dff);
   border-color: var(--dark-blue);
   border-width: 3px;
+   transition: transform 0.3s ease-in-out; 
 }
 
 .btn:hover {
   background-image: linear-gradient(#f5ebe0, #84a59d);
+  transform: scale(1.3); /* Makes the button 30% bigger */
 }
