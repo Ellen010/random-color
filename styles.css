@@ -8,20 +8,20 @@
 
 :root {
   --yellow: #f1be32;
-  --golden-yellow: #feac32;
+  --dark-blue: #323348;
   --dark-purple: #110815;
   --light-grey: #efefef;
 }
 
 body {
+  margin-top:50px;
   background-color: var(--dark-purple);
   color: var(--light-grey);
   text-align: center;
-  margin-top: 50px;
 }
 
 .bg-information-container {
-  padding: 30px;
+  padding:30px;
   margin: 15px 0 25px;
   font-size: 1.2rem;
 }
@@ -32,11 +32,11 @@ body {
   margin: 10px;
   color: var(--dark-purple);
   background-color: var(--golden-yellow);
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border-color: var(--golden-yellow);
+  background-image: linear-gradient(#e9f0ff, #5a6dff);
+  border-color: var(--dark-blue);
   border-width: 3px;
 }
 
 .btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
+  background-image: linear-gradient(#f5ebe0, #84a59d);
 }
