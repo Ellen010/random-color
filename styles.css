@@ -20,6 +20,14 @@ body {
   text-align: center;
 }
 
+.h1 {
+ transition: transform 0.3s ease-in-out; 
+}
+
+.h1:hover {
+  transform: scale(1.2); 
+}
+
 .bg-information-container {
   padding:30px;
   margin: 15px 0 25px;
@@ -41,5 +49,5 @@ body {
 
 .btn:hover {
   background-image: linear-gradient(#f5ebe0, #84a59d);
-  transform: scale(1.2); /* Makes the button 30% bigger */
+  transform: scale(1.2); 
 }
