@@ -12,19 +12,24 @@ const darkColorsArr = [
 ];
 
 function getRandomIndex() {
-  const randomIndex = Math.floor(darkColorsArr.length * Math.random());
-  return randomIndex;
+  return Math.floor(Math.random() * darkColorsArr.length);
 }
 
-const body = document.querySelector("body");
-const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.querySelector("body");
+  const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
+  const btn = document.querySelector("#btn");
 
-function changeBackgroundColor() {
-  const color = darkColorsArr[getRandomIndex()];
+  if (!btn) {
+    console.error("Button not found!");
+    return;
+  }
 
-  bgHexCodeSpanElement.innerText = color;
-  body.style.backgroundColor = color;
-}
-const btn = document.querySelector("#btn");
-
-btn.onclick = changeBackgroundColor();
+  btn.addEventListener("click", function () {
+    const color = darkColorsArr[getRandomIndex()];
+    if (color) {
+      body.style.backgroundColor = color;
+      bgHexCodeSpanElement.innerText = color;
+    }
+  });
+});
