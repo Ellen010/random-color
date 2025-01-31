@@ -20,11 +20,11 @@ body {
   text-align: center;
 }
 
-.h1 {
+h1 {
  transition: transform 0.3s ease-in-out; 
 }
 
-.h1:hover {
+h1:hover {
   transform: scale(1.2); 
 }
 
