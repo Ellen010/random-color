@@ -17,10 +17,11 @@ body {
   background-color: var(--dark-purple);
   color: var(--light-grey);
   text-align: center;
+  margin-top: 50px;
 }
 
 .bg-information-container {
-  padding:30px;
+  padding: 30px;
   margin: 15px 0 25px;
   font-size: 1.2rem;
 }
