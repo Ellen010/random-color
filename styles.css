@@ -31,6 +31,7 @@ body {
   padding: 10px;
   margin: 10px;
   color: var(--dark-purple);
+  radius:5px;
   background-color: var(--golden-yellow);
   background-image: linear-gradient(#e9f0ff, #5a6dff);
   border-color: var(--dark-blue);
